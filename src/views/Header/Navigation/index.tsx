@@ -1,20 +1,21 @@
+import React from "react";
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
-import { SwipeableDrawer } from "@mui/material";
 import useMediaQuery from "@mui/material/useMediaQuery";
 import "./style.css";
-import { useState } from "react";
+import MenuMobile from "./MenuMobile";
+import Colors from "../../../theme/colors/Colors";
+
 const Navigation = () => {
   const smallScreen = useMediaQuery("(max-width:595px)");
-  console.log(smallScreen);
   const navigationOptions = [
     { label: "Inicio", routeToNavigate: "/" },
     { label: "Produtos", routeToNavigate: "produtos" },
     { label: "Fale Conosco", routeToNavigate: "faleConosco" },
   ];
-  const modalStatus = useState(false);
+
   return smallScreen ? (
-    <SwipeableDrawer open={modalStatus} onOpen={() => {}} onClose={() => {}} />
+    <MenuMobile navigationOptions={navigationOptions} />
   ) : (
     <motion.nav
       initial={{ y: -100 }}
