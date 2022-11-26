@@ -24,8 +24,13 @@ const Banner = () => {
         className="auto-complete"
       >
         <DefaultAutoComplete
-          placeholder="O que deseja buscar?"
-          renderInput={(params) => <TextField {...params} size="medium" />}
+          renderInput={(params) => (
+            <TextField
+              placeholder="O que deseja buscar?"
+              {...params}
+              size="medium"
+            />
+          )}
           options={["option"]}
           style={{ backgroundColor: "#f1e8e8" }}
           className="auto-complete"
