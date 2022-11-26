@@ -38,6 +38,7 @@ const MenuMobile = ({ navigationOptions }: MenuMobileProps) => {
                 className="menu-mobile-label"
                 style={{ color: Colors.white }}
                 to={item.routeToNavigate}
+                onClick={() => setModalStatus(false)}
               >
                 {item.label}
               </Link>

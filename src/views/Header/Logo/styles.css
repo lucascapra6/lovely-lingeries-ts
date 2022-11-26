@@ -1,0 +1,73 @@
+@font-face {
+  font-family: "Brittany";
+  src: url("BrittanySignature.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Clear-Sans-Thin";
+  src: url("clear-sans-thin.ttf") format("truetype");
+}
+.logo-label1 {
+  font-family: Brittany;
+  text-align: center;
+  padding: 100px 0 10px 0;
+  color: #be3a39;
+}
+.logo-label2 {
+  position: relative;
+  bottom: 15px;
+  right: 12px;
+  display: flex;
+  font-family: Clear-Sans-Thin;
+  justify-content: center;
+  align-items: flex-start;
+  color: #be3a39;
+}
+
+/* For extremely small screen devices (595px and below) */
+@media only screen and (max-width: 595px) {
+  .logo-label1 {
+    font-size: 3.5em;
+  }
+  .logo-label2 {
+    font-size: 1em;
+    padding-left: 10px;
+  }
+}
+
+/* Small screen devices (600px and above) */
+@media only screen and (min-width: 595.1px) {
+  .logo-label1 {
+    font-size: 4.5em;
+    padding-bottom: 15px;
+  }
+  .logo-label2 {
+    font-size: 1.5em;
+  }
+}
+
+/* Medium screen devices (768px and above) */
+@media only screen and (min-width: 768px) {
+  .logo-label1 {
+    font-size: 4.5em;
+  }
+  .logo-label2 {
+    font-size: 1.5em;
+  }
+}
+
+/* Big screen devices (889px and above) */
+@media only screen and (min-width: 889px) {
+  .logo-label1 {
+    font-size: 4.5em;
+  }
+  .logo-label2 {
+    font-size: 1.5em;
+  }
+}
+
+/* Extra big screen devices (1200px and above) */
+@media only screen and (min-width: 1200px) {
+  .logo-label1 {
+    font-size: 4.5em;
+  }
+}

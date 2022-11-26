@@ -1,0 +1,110 @@
+.auto-complete {
+  position: absolute;
+  left: 0;
+  right: 0;
+  width: 40vw;
+  margin-left: auto;
+  margin-right: auto;
+  z-index: 2;
+  background-color: wheat;
+  border-radius: 5px;
+}
+.image-brandText-container {
+  height: 65vh;
+  display: flex;
+  background-color: #2b2a29;
+  padding: 3px;
+}
+.imageBanner {
+  width: 50vw;
+  margin-left: auto;
+  margin-right: auto;
+}
+.brand-text-container {
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 40px;
+}
+h2 {
+  font-size: 3.5em;
+  color: #be3a39;
+}
+.conjunction {
+  font-size: 3vw;
+  color: #be3a39;
+}
+
+.brand-text-separator {
+  margin-left: 20px;
+}
+
+/* For extremely small screen devices (595px and below) */
+@media only screen and (max-width: 595px) {
+  .auto-complete {
+    position: absolute;
+    width: 70vw;
+  }
+  h2 {
+    font-size: 2em;
+    text-align: center;
+  }
+  .conjunction {
+    font-size: 2em;
+    text-align: center;
+  }
+  .imageBanner {
+    display: none;
+  }
+  .image-brandText-container {
+    display: flex;
+  }
+  .brand-text-container {
+    margin-top: 30px;
+  }
+}
+
+/* Small screen devices (600px and above) */
+@media only screen and (min-width: 595.1px) {
+  h2 {
+    font-size: 2em;
+  }
+  .conjunction {
+    font-size: 2em;
+  }
+  .imageBanner {
+    width: 40vw;
+  }
+  .image-brandText-container {
+    display: flex;
+  }
+  .brand-text-container {
+    margin-top: 30px;
+  }
+  .small-device-padding120px {
+    padding-left: 120px;
+  }
+  .small-device-padding60px {
+    padding-left: 60px;
+  }
+}
+
+/* Medium screen devices (768px and above) */
+@media only screen and (min-width: 768px) {
+  h2 {
+    font-size: 2.5em;
+  }
+}
+
+/* Big screen devices (889px and above) */
+@media only screen and (min-width: 889px) {
+  h2 {
+    font-size: 3em;
+  }
+}
+
+/* Extra big screen devices (1200px and above) */
+@media only screen and (min-width: 1200px) {
+  h2 {
+    font-size: 3.5em;
+  }
+}

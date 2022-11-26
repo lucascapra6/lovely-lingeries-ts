@@ -24,7 +24,12 @@ const Navigation = () => {
       className="navigation-container"
     >
       {navigationOptions.map((item, index) => (
-        <Link key={index.toString()} to={item.routeToNavigate}>
+        <Link
+          className="navigation-label"
+          style={{ color: Colors.white }}
+          key={index.toString()}
+          to={item.routeToNavigate}
+        >
           {item.label}
         </Link>
       ))}
